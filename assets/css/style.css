@@ -1,0 +1,66 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: lightpink;
+    font-family: "inter", sans-serif;
+}
+
+.card-container {
+    width: 400px;
+    margin: 45px auto;
+    display: flex;
+    gap: 40px;
+
+}
+
+.card{
+    width: 500px;
+    background-color:#FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: solid 1px grey;
+
+}
+    .object-active img{
+        width: 200px;
+    }
+    .object img{
+        width: 200px;
+    }
+
+.product-feature-hidden{
+    visibility: hidden;  
+}
+
+.product{
+    list-style: none;
+}
+
+button{
+    margin:20px;
+    width: 80px;
+    height: 30px;
+}
+
+.show-color{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+}

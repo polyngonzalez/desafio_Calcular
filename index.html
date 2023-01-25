@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Laptop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <ul class="product">
+                <li class="object-active" id="black">
+                    <img src="assets/img/laptop-black.JPG" alt="" class="product-feature-image">
+                </li>
+            </ul>
+            <h3 class="product-name">HP Basic Laptop</h3>
+            <div class="price-container">
+                Precio:$ <span class="price">450.000</span>
+            </div>
+            <div class="quantity-color-container">
+                <form action="selector">
+                    <label>Ingresa una cantidad:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </form>
+                <form action="selector">
+                    <label for="quantity">Selecciona un color:</label>
+                    <select name="color" id="color-election">
+                        <option value="black">Negro</option>
+                        <option value="blue">Azúl</option>
+                    </select>
+                </form>
+            </div>
+                <!-- boton de calcular -->
+            <button onclick="
+            var1=450000;
+            var2=(document.querySelector('input').value);
+            res=Number(var1) * Number(var2);
+            document.querySelector('.items-price').innerHTML=res;
+                /* color */
+            console.log(document.querySelector('select').value);
+            document.querySelector('.show-color').style.backgroundColor=document.querySelector('select').value;
+                /* cantidad final */
+            console.log(document.querySelector('input').value);
+            document.querySelector('.show-final-price').innerHTML=document.querySelector('input').value;            
+            ">Calcular
+            </button>
+
+                <!-- parte final elecciones -->
+            <div class="final-price">
+                Valor a pagar: $<span class="items-price">0</span>
+            </div>
+            <div class="final-color">Elección de color:</div>
+            <div class="show-color"></div>
+
+            <div class="final-purchase">
+                Cantidad final:<span class="show-final-price">0</span>
+            </div>
+        </div>
+    </div> <!-- Cierra card container -->
+</body>
+
+</html>
